@@ -1,8 +1,31 @@
-# Computer-Vision---Final-Project
-- This project done on computer vision course in Udemy platform.
-- The goals of project: to recognize my hand number and show it with counter.
+# Computer-Vision- Final Project
+- This project was done on a computer vision course in Udemy platform.
+- The goals of the project: to recognize my hand number and show it with a counter on the Screen.
+
+ # Generally Process:
+ - First calculate changes in background.
+ - Isolate the hand from the background.
+ - Count fingers by points that are not inside the area of scope (include the scope).
 
 # Stage of project:
 
-# First- Finding Average Background Value
-- 
+# Stage 1- Finding Average Background Value:
+- Creating the background (if background does not exist).
+- This function calculates a weighted sum of the input image (`frame`) and the existing background, with the weight determined by the `accumulated_weight` parameter. This weighted sum is then used to update the background.
+- That will help us to recognize if the hand comes into the ROI.
+
+# Stage 2- Segment the Hand Region in Frame:
+- Absolute Difference: The function calculates the absolute difference between the current frame and the background. This helps to highlight the regions where changes have occurred in the video stream (compare pixel by pixel).
+- To recognize the contours of the hand I change the Absolute Difference to THRESH_BINARY.
+- Take the largest area of contours (means the contours of hand).
+
+# Stage 3- Counting Fingers with a Convex Hull
+- Create polygon by cv.convexHull().
+- Link to documentation: https://docs.opencv.org/4.x/dd/d49/tutorial_py_contour_features.html
+   
+    <img width="225" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/467a5276-8a63-4fcd-b282-e04c0f75f5c0">
+   
+- Calculate the 4 most outward points, on the top, bottom, left, and right.
+- Calculate the center point of the circle.
+- Calculate the radius (the max distance between the center to the points on the scope.
+- Each point outside of the circle will be counted.
