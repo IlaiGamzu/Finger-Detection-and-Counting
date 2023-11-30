@@ -34,17 +34,28 @@
 - The numbers are recognize from 0 to 5.
 - The counter display on screen.
 
+- Recognize 0:
+
 <img width="477" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/c7689cca-897f-451d-9aa1-e64d5d9d8ac3">
 
+- Recognize 1:
+  
 <img width="730" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/ed92317e-a97a-4d7f-958c-6921432f8ee7">
 
-
+- Recognize 2:
+  
 <img width="675" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/08782b92-c272-4d91-86a0-963b39a4cffe">
 
+- Recognize 3:
+  
 <img width="666" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/e4163a5e-2758-4b8e-a4ac-a3f04bfc92b4">
 
+- Recognize 4:
+  
 <img width="749" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/564daac9-01e9-451c-b2fc-39c681bf5c76">
 
+- Recognize 5:
+  
 <img width="752" alt="image" src="https://github.com/IlaiGamzu/Computer-Vision-Final-Project/assets/135164356/5924645d-3e3b-4875-b069-e70e1dd58fcb">
 
 
