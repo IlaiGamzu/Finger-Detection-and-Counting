@@ -1,5 +1,5 @@
-# Computer-Vision- Final Project
-- This project was done on a computer vision course in Udemy platform.
+# Finger Detection and counting
+
 - The goals of the project: to recognize my hand number and show it with a counter on the Screen.
 
  # Generally Process:
