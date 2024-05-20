@@ -40,8 +40,8 @@ def segment(frame, threshold=25):
     if len(contours) == 0:
         return None
     else:
-        # Given the way we are using the program, the largest external contour should be the hand (largest by area)
-        # This will be our segment
+        # The largest external contour should be the hand (largest by area)
+        # This will be segment
         hand_segment = max(contours, key=cv2.contourArea)
 
         # Return both the hand segment and the thresholded hand image in tuple.
